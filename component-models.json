@@ -16,6 +16,26 @@
     ]
   },
   {
+    "id": "text",
+    "fields": [
+      {
+        "component": "select",
+        "name": "class",
+        "label": "Style",
+        "options": [
+          {
+            "name": "Article",
+            "value": "article"
+          },
+		  {
+			"name": "Disclosure",
+			"value": "diclosure"
+		  }
+        ]
+      }
+    ]
+  },
+  {
     "id": "title",
     "fields": [
       {
@@ -55,32 +75,6 @@
         ]
       }
     ]
-  },
-  {
-    "id": "article",
-    "fields": [
-      {
-        "component": "text",
-        "name": "content",
-        "label": "Content"
-      }
-	]
-  },
-  {
-    "id": "disclosure",
-    "fields": [
-	  {
-			"component": "reference",
-			"name": "icon",
-			"label": "Icon",
-			"multi": false
-	  },
-      {
-        "component": "text",
-        "name": "content",
-        "label": "Content"
-      }
-	]
   },
   {
     "id": "button",
