@@ -149,6 +149,16 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      },
+	  {
+        "component": "text",
+        "name": "link",
+        "label": "Link"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Text"
       }
     ]
   },
