@@ -22,8 +22,6 @@ export default function decorate(block) {
 				div.className = 'cards-hide-markdown';
 			  } else if (div.children.length === 1 && div.querySelector('picture')) {
 				div.className = 'cards-card-image';
-			  } else if (div.children.length === 1 && div.querySelector('span')) {
-				div.className = 'cards-card-icon';
 			  } else {
 				div.className = 'cards-card-body';
 			  }
