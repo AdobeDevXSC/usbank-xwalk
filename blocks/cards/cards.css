@@ -92,7 +92,7 @@
 	margin: 16px 0 0 0;
 	min-width: 5rem;
 	width: 100%;
-	color: var(--text-color);
+	color: var(--link-hover-color);
   }
   
   .cards.icon > ul > a > li > .cards-card-body > p {
@@ -115,7 +115,7 @@
 	display: block;
 	width: 40px;
 	height: 40px;
-	filter: invert(10%) sepia(67%) saturate(3125%) hue-rotate(218deg) brightness(109%) contrast(115%);
+	filter: invert(31%) sepia(79%) saturate(4497%) hue-rotate(219deg) brightness(92%) contrast(95%);
   }
   
   /* icon card hover styles */
@@ -135,7 +135,7 @@
 	text-underline-position: under;
   }
 
-  
+
   
   /* articles cards styles */
   .cards.articles {
