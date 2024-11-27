@@ -112,6 +112,28 @@
     ]
   },
   {
+    "id": "cards",
+    "fields": [
+		{
+			"component": "select",
+			"name": "classes",
+			"value": "",
+			"label": "Block Variation",
+			"valueType": "string",
+			"options": [
+			  {
+				"name": "Icon",
+				"value": "icon"
+			  },
+			  {
+				"name": "Articles",
+				"value": "articles"
+			  }
+			]
+		}
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
