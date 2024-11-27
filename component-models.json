@@ -182,7 +182,24 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
-      }
+      },
+	  {
+		"component": "select",
+		"name": "classes",
+		"value": "",
+		"label": "Hero Type",
+		"valueType": "string",
+		"options": [
+		  {
+			"name": "Main",
+			"value": "main"
+		  },
+		  {
+			"name": "Article",
+			"value": "article"
+		  }
+		]
+	  }
     ]
   }
 ]
