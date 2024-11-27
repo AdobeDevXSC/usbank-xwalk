@@ -67,6 +67,22 @@
 	]
   },
   {
+    "id": "disclosure",
+    "fields": [
+	  {
+			"component": "reference",
+			"name": "icon",
+			"label": "Icon",
+			"multi": false
+	  },
+      {
+        "component": "text",
+        "name": "content",
+        "label": "Content"
+      }
+	]
+  },
+  {
     "id": "button",
     "fields": [
       {
