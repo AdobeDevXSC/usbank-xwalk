@@ -19,17 +19,21 @@ footer {
 	display: flex;
   }
   
-  footer .footer .default-content-wrapper span {
+  footer .footer .default-content-wrapper p {
 	margin-right: 32px;
 	height: 70.5px;
 	width: 40px;
 	display: inline-block;
   }
   
-  footer .footer .default-content-wrapper span img {
+  footer .footer .default-content-wrapper p > picture > img {
 	height: 40px;
 	width: 40px;
   }
+  
+
+
+
   
   /* footer columns section */
   footer .footer .footer-columns.block > div {
