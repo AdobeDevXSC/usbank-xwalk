@@ -7,8 +7,8 @@ Article:
 https://www.usbank.com/financialiq/manage-your-household/establish-credit/how-to-maximize-your-credit-card-rewards.html 
 
 ## Environments
-- Preview: https://main--usbank--AdobeDevXSC.hlx.page/
-- Live: https://main--usbank--AdobeDevXSC.hlx.live/
+- Preview: https://main--usbank-xwalk--AdobeDevXSC.hlx.page/
+- Live: https://main--usbank-xwalk--AdobeDevXSC.hlx.live/
 
 ## Installation
 
