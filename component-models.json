@@ -70,6 +70,11 @@
     "id": "disclosure",
     "fields": [
 	  {
+		"component": "text",
+		"name": "title",
+		"label": "Title"
+	  },
+	  {
 		"component": "reference",
 		"name": "icon",
 		"label": "Icon",
