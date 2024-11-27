@@ -71,10 +71,15 @@
     "fields": [
 	  {
 		"component": "reference",
-		"name": "image",
-		"label": "Image",
+		"name": "icon",
+		"label": "Icon",
 		"multi": false
 	  },
+	  {
+        "component": "text",
+        "name": "tagline",
+        "label": "Tagline"
+      },
       {
         "component": "richtext",
         "name": "content",

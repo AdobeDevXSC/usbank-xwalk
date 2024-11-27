@@ -4,10 +4,11 @@
 }
 
 .disclosure > div {
-	grid-column: span 7;
+	grid-column: span 7; 
+	border: solid 2px orange;
 }
 
-.disclosure > div div:first-child p {
+.disclosure > div > div > p {
 	margin: 0;
 	line-height: 1.3;
     font-size: 1.35rem;
