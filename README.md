@@ -1,9 +1,14 @@
-# Your Project's Title...
-Your project's description...
+# US Bank Edge Delivery Document-Based Authoring Demo...
+Mockup of US Bank landing page and article page to showcase how efficient is to develop sites in Edge Delivery Services with X-Walk &AEM Universal Editor.
+
+Landing Page:
+https://www.usbank.com/financialiq/manage-your-household.html
+Article:
+https://www.usbank.com/financialiq/manage-your-household/establish-credit/how-to-maximize-your-credit-card-rewards.html 
 
 ## Environments
-- Preview: https://main--usbank-xwalk--AdobeDevXSC.aem.page/
-- Live: https://main--usbank-xwalk--AdobeDevXSC.aem.live/
+- Preview: https://main--usbank--AdobeDevXSC.hlx.page/
+- Live: https://main--usbank--AdobeDevXSC.hlx.live/
 
 ## Installation
 
