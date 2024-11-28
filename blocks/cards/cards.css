@@ -136,11 +136,11 @@
   }
 
 
-  
+
   
   /* articles cards styles */
   .cards.articles {
-	padding: 0
+	padding: 0;
   }
   
   .cards.articles ul {
@@ -149,6 +149,7 @@
 	grid-gap: 24px 30px;
 	min-width: 100%;
 	padding: 0;
+	border: solid 2px lime;
   }
   
   .cards.articles ul li {
@@ -167,12 +168,13 @@
 	height: 100%;
 	gap: 1.5rem;
 	padding-bottom: 32px;
+	border: solid 2px lime;
   }
   
   .cards.articles .cards-card-body h5 {
 	font-size: 22px;
 	font-weight: 700;
-	color: var(--text-color);
+	color: var(--text-color) !important;
 	margin-top: 1rem;
   }
   
