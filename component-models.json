@@ -199,7 +199,7 @@
       {
         "component": "text",
         "name": "linkText",
-        "label": "Text"
+        "label": "Link Text"
       }
     ]
   },
