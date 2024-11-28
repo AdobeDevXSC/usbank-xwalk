@@ -32,33 +32,6 @@
     }
   ],
   "models": [
-	{
-		"id": "cards",
-		"fields": [
-			{
-				"component": "select",
-				"name": "classes",
-				"value": "",
-				"label": "Block Variation",
-				"valueType": "string",
-				"options": [
-				  {
-					"name": "Icon",
-					"value": "icon"
-				  },
-				  {
-					"name": "Articles",
-					"value": "articles"
-				  }
-				]
-			},
-			{
-				"component": "text",
-				"name": "link",
-				"label": "Service Link"
-			}
-		]
-	},
     {
       "id": "card",
       "fields": [
