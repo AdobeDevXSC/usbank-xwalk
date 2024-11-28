@@ -5,6 +5,17 @@ export default function decorate(block) {
 	const isIconCards = block.classList.contains('icon');
 	const isArticleCards = block.classList.contains('articles');
 
+	async function fetchJson(link) {
+		const response = await fetch(link?.href);
+	
+		if (response.ok) {
+		  const jsonData = await response.json();
+		  const data = jsonData?.data;
+		  return data;
+		}
+		return 'an error occurred';
+	}
+	
   /* change to ul, li */
   const ul = document.createElement('ul');
 
@@ -29,6 +40,36 @@ export default function decorate(block) {
 		anchor.append(li);
 		ul.append(anchor);
 	});
+  };
+
+	
+  if (isArticleCards) {
+	link = block.querySelector('a');
+	const cardData = fetchJson(link);
+  
+  cardData.forEach((item) => {
+      const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
+      picture.lastElementChild.width = '320';
+      picture.lastElementChild.height = '180';
+      const createdCard = document.createElement('li');
+      createdCard.innerHTML = `
+        <div class="cards-card-image">
+          <div data-align="center">${picture.outerHTML}</div>
+        </div>
+        <div class="cards-card-body">
+          <h5>${item.title}</h5>
+          <p class="button-container">
+            <a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
+              Read more 
+              <span class="card-arrow">
+                <img class="icon" src="/icons/chevron.svg" />
+              </span>
+            </a>
+          </p>
+        </div>
+      `;
+      ul.append(createdCard);
+    });
   }
 
   ul.querySelectorAll('picture > img').forEach((img) => {
@@ -36,6 +77,7 @@ export default function decorate(block) {
     moveInstrumentation(img, optimizedPic.querySelector('img'));
     img.closest('picture').replaceWith(optimizedPic);
   });
+
   block.textContent = '';
   block.append(ul);
 }

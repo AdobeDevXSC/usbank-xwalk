@@ -24,9 +24,10 @@
   --footer-color: #011d78;
   --button-primary-color: #cf2a36;
   --button-hover-color: #9b0a28;
+  --disclosure-color: #4c4c50;
 
   /* fonts */
-  --body-font-family: circular, sans-serif;
+  --body-font-family: 'circular', sans-serif;
   --heading-font-family: var(--body-font-family), sans-serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
