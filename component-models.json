@@ -148,36 +148,6 @@
     ]
   },
   {
-    "id": "cards",
-    "fields": [
-      {
-        "component": "select",
-        "name": "classes",
-        "value": "",
-        "label": "Block Variation",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Icon",
-            "value": "icon"
-          },
-          {
-            "name": "Articles",
-            "value": "articles"
-          }
-        ]
-      },
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "value": "",
-        "label": "Spreadsheet Link",
-        "valueType": "string",
-        "multi": false
-      }
-    ]
-  },
-  {
     "id": "card",
     "fields": [
       {
