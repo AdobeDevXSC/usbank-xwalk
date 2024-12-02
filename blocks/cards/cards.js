@@ -2,6 +2,7 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
+	return block;
 	const isIconCards = block.classList.contains('icon');
 	const isArticleCards = block.classList.contains('articles');
 
