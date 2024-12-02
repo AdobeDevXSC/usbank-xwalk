@@ -168,9 +168,12 @@
 			]
 		},
 		{
-			"component": "text",
-			"name": "link",
-			"label": "Service Link"
+			"component": "aem-content",
+			"name": "reference",
+			"value": "",
+			"label": "Spreadsheet Link",
+			"valueType": "string",
+			"multi": false
 		}
     ]
   },
