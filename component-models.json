@@ -135,6 +135,14 @@
     "id": "section",
     "fields": [
       {
+        "component": "aem-content",
+        "name": "reference",
+        "value": "",
+        "label": "Lazy Cards Link",
+        "valueType": "string",
+        "multi": false
+      },
+      {
         "component": "multiselect",
         "name": "style",
         "label": "Style",
