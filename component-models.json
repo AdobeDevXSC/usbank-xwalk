@@ -64,23 +64,23 @@
         "name": "content",
         "label": "Content"
       }
-	]
+    ]
   },
   {
     "id": "disclosure",
     "fields": [
-	  {
-		"component": "text",
-		"name": "title",
-		"label": "Title"
-	  },
-	  {
-		"component": "reference",
-		"name": "icon",
-		"label": "Icon",
-		"multi": false
-	  },
-	  {
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      },
+      {
         "component": "text",
         "name": "tagline",
         "label": "Tagline"
@@ -90,7 +90,7 @@
         "name": "content",
         "label": "Content"
       }
-	]
+    ]
   },
   {
     "id": "button",
@@ -150,31 +150,31 @@
   {
     "id": "cards",
     "fields": [
-		{
-			"component": "select",
-			"name": "classes",
-			"value": "",
-			"label": "Block Variation",
-			"valueType": "string",
-			"options": [
-			  {
-				"name": "Icon",
-				"value": "icon"
-			  },
-			  {
-				"name": "Articles",
-				"value": "articles"
-			  }
-			]
-		},
-		{
-			"component": "aem-content",
-			"name": "reference",
-			"value": "",
-			"label": "Spreadsheet Link",
-			"valueType": "string",
-			"multi": false
-		}
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Block Variation",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Icon",
+            "value": "icon"
+          },
+          {
+            "name": "Articles",
+            "value": "articles"
+          }
+        ]
+      },
+      {
+        "component": "aem-content",
+        "name": "reference",
+        "value": "",
+        "label": "Spreadsheet Link",
+        "valueType": "string",
+        "multi": false
+      }
     ]
   },
   {
@@ -194,7 +194,7 @@
         "label": "Text",
         "valueType": "string"
       },
-	  {
+      {
         "component": "text",
         "name": "link",
         "label": "Link"
@@ -259,23 +259,23 @@
         "label": "Text",
         "valueType": "string"
       },
-	  {
-		"component": "select",
-		"name": "classes",
-		"value": "",
-		"label": "Hero Type",
-		"valueType": "string",
-		"options": [
-		  {
-			"name": "Main",
-			"value": "main"
-		  },
-		  {
-			"name": "Article",
-			"value": "article"
-		  }
-		]
-	  }
+      {
+        "component": "select",
+        "name": "classes",
+        "value": "",
+        "label": "Hero Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Main",
+            "value": "main"
+          },
+          {
+            "name": "Article",
+            "value": "article"
+          }
+        ]
+      }
     ]
   }
 ]
