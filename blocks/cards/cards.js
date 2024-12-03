@@ -39,9 +39,9 @@ export default function decorate(block) {
 			});
 		anchor.append(li);
 		ul.append(anchor);
-	});
+	})
   } else if (isArticleCards) {
-	link = block.querySelector('a');
+	const link = block.querySelector('a');
 	const cardData = fetchJson(link);
   
   cardData.forEach((item) => {
