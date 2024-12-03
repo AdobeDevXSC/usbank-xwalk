@@ -121,7 +121,7 @@ header .nav-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	grid-column: 1/ span 3;
+	grid-column: 1/ span 2;
   }
   
   header nav .nav-sections ul:last-of-type {
