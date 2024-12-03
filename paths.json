@@ -3,8 +3,8 @@
     "/content/usbank-xwalk/:/",
     "/content/usbank-xwalk/configuration:/.helix/config.json",
     "/content/usbank-xwalk/metadata:/metadata.json",
-	"/content/usbank-xwalk/articles/featured-stories:/articles/featured-stories.json",
-	"/content/usbank-xwalk/articles/related-content:/articles/related-content.json",
+    "/content/usbank-xwalk/articles/featured-stories:/articles/featured-stories.json",
+    "/content/usbank-xwalk/articles/related-content:/articles/related-content.json",
     "/content/dam/usbank-xwalk/images/:/images/"
   ],
   "includes": [
