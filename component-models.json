@@ -179,10 +179,14 @@
 			"label": "Block Variant",
 			"valueType": "string",
 			"options": [
-			  {
-				"name": "Icon Cards",
-				"value": "is-icon"
-			  }
+				{
+					"name": "Default",
+					"value": ""
+				},
+				{
+					"name": "Icon Cards",
+					"value": "is-icon"
+				}
 			]
 		}
     ]

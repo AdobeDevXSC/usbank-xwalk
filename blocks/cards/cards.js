@@ -20,9 +20,6 @@ export default async function decorate(block) {
 		[...li.children].forEach((div) => {
 			if (div.children.length === 1 && div.querySelector('a')) {
 				const linkURL = div.querySelector('a').innerHTML;
-				if(div.querySelector('a')){
-					console.log(div)
-				}
 				anchor.href = linkURL;
 				div.className = 'cards-hide-markdown';
 			  } else if (div.children.length === 1 && div.querySelector('picture')) {
