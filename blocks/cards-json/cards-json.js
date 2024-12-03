@@ -14,18 +14,16 @@ export default async function decorate(block) {
 		}
 
 		const jsonData = await response.json();
-		console.log(link, jsonData.data);
 		const cardData = jsonData.data;
-		const cards = []
 	  
-		cardData.forEach((item, index) => {
+		cardData.forEach((item) => {
 			const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
 			picture.lastElementChild.width = '320';
 			picture.lastElementChild.height = '180';
 
 			const createdCard = document.createElement('li');
 			moveInstrumentation(item, createdCard);
-
+			
 			createdCard.innerHTML = `
 				<div class="cards-card-image">
 				<div data-align="center">${picture.outerHTML}</div>
@@ -42,8 +40,10 @@ export default async function decorate(block) {
 				</p>
 				</div>
 			`;
+
+			console.log(createdCard)
 			ul.append(createdCard);
-			})
+		})
 
 //   ul.querySelectorAll('picture > img').forEach((img) => {
 //     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
