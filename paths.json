@@ -2,10 +2,11 @@
   "mappings": [
     "/content/usbank-xwalk/:/",
     "/content/usbank-xwalk/configuration:/.helix/config.json",
-    "/content/usbank-xwalk/metadata:/metadata.json"
+    "/content/usbank-xwalk/metadata:/metadata.json",
+    "/content/dam/usbank-xwalk/images/:/images/"
   ],
   "includes": [
     "/content/usbank-xwalk/",
-	"/content/dam/usbank-xwalk/images/"
+    "/content/dam/usbank-xwalk/images/"
   ]
 }
