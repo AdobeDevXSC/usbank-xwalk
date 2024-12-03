@@ -5,6 +5,7 @@
     "/content/usbank-xwalk/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/usbank-xwalk/"
+    "/content/usbank-xwalk/",
+	"/content/dam/usbank-xwalk/images/"
   ]
 }
