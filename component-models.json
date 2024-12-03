@@ -184,14 +184,6 @@
 				"value": "is-icon"
 			  }
 			]
-		},
-		{
-			"component": "aem-content",
-			"name": "reference",
-			"value": "",
-			"label": "Spreadsheet Link",
-			"valueType": "string",
-			"multi": false
 		}
     ]
   },

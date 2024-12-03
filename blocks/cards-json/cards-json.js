@@ -5,13 +5,13 @@ export default async function decorate(block) {
 	block.classList.add('is-json');
 
 	const ul = document.createElement('ul');
-	const link = block.querySelector('p > a');
-	const response = await fetch(link?.href);
-		if (!response.ok) {
-			return 'an error occurred';
-		}
+	// const link = block.querySelector('p > a');
+	// const response = await fetch(link?.href);
+		// if (!response.ok) {
+		// 	return 'an error occurred';
+		// }
 
-		console.log(link, response.json());
+		// console.log(link, response.json());
 		// const cardData = jsonData.data;
 		// const cards = []
 
@@ -44,18 +44,11 @@ export default async function decorate(block) {
 	// 	  ul.append(createdCard);
 	// 	})
 
-
-	
-  // handles icon cards & regular cards (authored directly in UE) 
-  /* change to ul, li */
-
-
-
-  ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
-    moveInstrumentation(img, optimizedPic.querySelector('img'));
-    img.closest('picture').replaceWith(optimizedPic);
-  });
+//   ul.querySelectorAll('picture > img').forEach((img) => {
+//     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+//     moveInstrumentation(img, optimizedPic.querySelector('img'));
+//     img.closest('picture').replaceWith(optimizedPic);
+//   });
 
   block.textContent = '';
   block.append(ul);
