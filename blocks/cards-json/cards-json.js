@@ -7,44 +7,44 @@ export default async function decorate(block) {
 
 	const ul = document.createElement('ul');
 	const link = block.querySelector('p > a');
-	console.log(link);
-	
+
 	const response = await fetch(link?.href);
-		if (!response.ok) {
-			return 'an error occurred';
-		}
+	if (!response.ok) {
+		return 'an error occurred';
+	}
+	console.log(link, response)
 
-		const jsonData = await response.json();
-		const cardData = jsonData.data;
-		console.log(link, response)
-	  
-		cardData.forEach((item) => {
-			const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
-			picture.lastElementChild.width = '320';
-			picture.lastElementChild.height = '180';
+	const jsonData = await response.json();
+	const cardData = jsonData.data;
 
-			const createdCard = document.createElement('li');
-			
-			createdCard.innerHTML = `
-				<div class="cards-card-image">
-					<div data-align="center">${picture.outerHTML}</div>
-				</div>
-				<div class="cards-card-body">
-				<h5>${item.title}</h5>
-				<p class="button-container">
-					<a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
-					Read more 
-					<span class="card-arrow">
-						<img class="icon" src="../icons/chevron.svg" />
-					</span>
-					</a>
-				</p>
-				</div>
-			`;
+	
+	cardData.forEach((item) => {
+		const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
+		picture.lastElementChild.width = '320';
+		picture.lastElementChild.height = '180';
 
-			console.log(createdCard)
-			ul.append(createdCard);
-		})
+		const createdCard = document.createElement('li');
+		
+		createdCard.innerHTML = `
+			<div class="cards-card-image">
+				<div data-align="center">${picture.outerHTML}</div>
+			</div>
+			<div class="cards-card-body">
+			<h5>${item.title}</h5>
+			<p class="button-container">
+				<a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
+				Read more 
+				<span class="card-arrow">
+					<img class="icon" src="../icons/chevron.svg" />
+				</span>
+				</a>
+			</p>
+			</div>
+		`;
+
+		console.log(createdCard)
+		ul.append(createdCard);
+	})
 
   block.textContent = '';
   block.append(ul);
