@@ -22,7 +22,7 @@ export default async function decorate(block) {
 			picture.lastElementChild.height = '180';
 
 			const createdCard = document.createElement('li');
-			moveInstrumentation(item, createdCard);
+			// moveInstrumentation(item, createdCard);
 			
 			createdCard.innerHTML = `
 				<div class="cards-card-image">
