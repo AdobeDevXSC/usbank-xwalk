@@ -34,7 +34,7 @@ export default async function decorate(block) {
 					<a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
 					Read more 
 					<span class="card-arrow">
-						<img class="icon" src="/icons/chevron.svg" />
+						<img class="icon" src="../icons/chevron.svg" />
 					</span>
 					</a>
 				</p>
