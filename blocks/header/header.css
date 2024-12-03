@@ -51,6 +51,7 @@ header .nav-wrapper {
 	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12);
   }
   
+  /* logo sizing */
   header nav .nav-brand img {
 	width: 128px;
 	height: auto;
@@ -96,7 +97,8 @@ header .nav-wrapper {
 	list-style: none;
 	display: flex;
 	align-items: center;
-	font-size: 0.9rem;
+	font-size: .75rem;
+	font-weight: 400;
 	color: var(--text-color);
 	padding: 0;
 	margin: 14px 0;
@@ -119,7 +121,7 @@ header .nav-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	grid-column: 1/ span 2;
+	grid-column: 1/ span 3;
   }
   
   header nav .nav-sections ul:last-of-type {
@@ -130,31 +132,46 @@ header .nav-wrapper {
   
   header nav .nav-sections p:first-of-type {
 	width: 242px;
+	height: 32px;
 	background-color: var(--light-color);
 	border-radius: 1.5rem;
 	font-size: .875rem;
-	padding: .25rem;
-	display: flex;
-	align-items: center;
+	padding-left: 36px;
+	line-height: 32px;
+	align-self: center;
 	grid-column: 9/ span 3;
-  }
-  
-  header nav .nav-sections p:first-of-type span {
-	background-color: rgb(10, 65, 197);
-	border-radius: 100%;
+	color: #0a41c5;
 	position: relative;
   }
   
-  header nav .nav-sections p:first-of-type span img {
-	width: 18px;
-	height: 18px;
-	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(175deg) brightness(103%) contrast(101%);
+  header nav .nav-sections p:first-of-type::after {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 24px;
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translateY(-50%);
+	left: 4px;
+	border-radius: 50%;
+	background-color:#0a41c5;;
   }
-  
+
+  header nav .nav-sections p:first-of-type::before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 8px;
+	background-image: url("../../icons/search.svg");
+	background-size: cover;
+	z-index: 10;
+	filter: invert(99%) sepia(17%) saturate(257%) hue-rotate(353deg) brightness(117%) contrast(100%);
+  }
+    
   header nav .nav-sections .button-container {
 	display: flex;
 	align-items: center;
@@ -174,19 +191,27 @@ header .nav-wrapper {
   header nav .nav-tools ul {
 	list-style: none;
 	display: flex;
-	font-size: .75rem;
+	align-items: center;
+	font-size: 0.75rem;
+	line-height: normal;
 	color: var(--text-color);
 	padding: 0;
 	max-height: 50px;
+	min-height: 50px;
+	margin: 0;
   }
   
-  header nav .nav-tools ul li:first-of-type:hover a {
+  header nav .nav-tools ul li:first-of-type:hover p {
+	text-decoration: underline;
+	cursor: pointer;
 	text-underline-position: under;
   }
   
   header nav .nav-tools ul li {
 	display: flex;
 	align-items: center;
+	max-height: 50px;
+	min-height: 50px;
   }
   
   header nav .nav-tools ul li:last-of-type:before {
@@ -226,6 +251,7 @@ header .nav-wrapper {
 	  position: relative;
 	  height: 100%;
 	  justify-content: flex-end;
+	  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .12);
 	}
   
 	header nav .nav-brand .default-content-wrapper p:last-of-type {

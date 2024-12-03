@@ -51,6 +51,7 @@ export default async function decorate(block) {
 
 }
 	
+  // handles icon cards & regular cards (authored directly in UE) 
   /* change to ul, li */
   const ul = document.createElement('ul');
 
