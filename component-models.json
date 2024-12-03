@@ -158,11 +158,11 @@
 			"valueType": "string",
 			"options": [
 			  {
-				"name": "Icon",
+				"name": "Icon Cards",
 				"value": "is-icon"
 			  },
 			  {
-				"name": "JSON",
+				"name": "JSON Cards",
 				"value": "is-json"
 			  }
 			]
