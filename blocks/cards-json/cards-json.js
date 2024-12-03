@@ -15,6 +15,7 @@ export default async function decorate(block) {
 
 		const jsonData = await response.json();
 		const cardData = jsonData.data;
+		console.log(link, jsonData)
 	  
 		cardData.forEach((item) => {
 			const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
@@ -26,7 +27,7 @@ export default async function decorate(block) {
 			
 			createdCard.innerHTML = `
 				<div class="cards-card-image">
-				<div data-align="center">${picture.outerHTML}</div>
+					<div data-align="center">${picture.outerHTML}</div>
 				</div>
 				<div class="cards-card-body">
 				<h5>${item.title}</h5>
