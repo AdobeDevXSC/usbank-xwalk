@@ -42,6 +42,7 @@ export default function decorate(block) {
 	})
   } else if (isArticleCards) {
 	const link = block.querySelector('a');
+	console.log(link);
 	const cardData = fetchJson(link);
   
   cardData.forEach((item) => {
@@ -49,6 +50,7 @@ export default function decorate(block) {
       picture.lastElementChild.width = '320';
       picture.lastElementChild.height = '180';
       const createdCard = document.createElement('li');
+	  moveInstrumentation(item, createdCard);
       createdCard.innerHTML = `
         <div class="cards-card-image">
           <div data-align="center">${picture.outerHTML}</div>
@@ -68,21 +70,21 @@ export default function decorate(block) {
       ul.append(createdCard);
     });
   } else {
-
-  [...block.children].forEach((row) => {
-	const li = document.createElement('li');
-	while (row.firstElementChild) li.append(row.firstElementChild);
-	[...li.children].forEach((div) => {
-		if (div.children.length === 1 && div.querySelector('picture')) {
-			div.className = 'cards-card-image';
-		} else if (div.children.length === 1 && div.querySelector('span')) {
-			div.className = 'cards-card-icon';
-		} else {
-			div.className = 'cards-card-body';
-		}
+	[...block.children].forEach((row) => {
+		const li = document.createElement('li');
+		moveInstrumentation(row, li);
+		while (row.firstElementChild) li.append(row.firstElementChild);
+		[...li.children].forEach((div) => {
+			if (div.children.length === 1 && div.querySelector('picture')) {
+				div.className = 'cards-card-image';
+			} else if (div.children.length === 1 && div.querySelector('span')) {
+				div.className = 'cards-card-icon';
+			} else {
+				div.className = 'cards-card-body';
+			}
+		});
+		ul.append(li);
 	});
-	ul.append(li);
-  });
   }
 
   ul.querySelectorAll('picture > img').forEach((img) => {
