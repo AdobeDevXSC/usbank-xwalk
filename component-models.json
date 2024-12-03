@@ -159,11 +159,11 @@
 			"options": [
 			  {
 				"name": "Related Content",
-				"value": "/related-content.json"
+				"value": "https://author-p122858-e1208691.adobeaemcloud.com/related-content.json"
 			  },
 			  {
 				"name": "Featured Stories",
-				"value": "/featured-stories.json"
+				"value": "https://author-p122858-e1208691.adobeaemcloud.com/featured-stories.json"
 			  }
 			]
 		}
