@@ -32,10 +32,7 @@ export default async function decorate(block) {
 				<h5>${item.title}</h5>
 				<p class="button-container">
 					<a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
-					Read more 
-					<span class="card-arrow">
-						<img class="icon" src="/icons/chevron.svg" />
-					</span>
+						Read more >
 					</a>
 				</p>
 				</div>
