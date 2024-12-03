@@ -6,8 +6,9 @@ export default async function decorate(block) {
 
 	const ul = document.createElement('ul');
 	const link = block.querySelector('p > a');
-	console.log(link)
-	// const response = await fetch(link?.href);
+
+	const response = await fetch(link?.href);
+	console.log(response)
 		// if (!response.ok) {
 		// 	return 'an error occurred';
 		// }
