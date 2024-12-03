@@ -158,11 +158,11 @@
 			"value": "",
 			"options": [
 			  {
-				"name": "Default",
+				"name": "Related Content",
 				"value": "/related-content.json"
 			  },
 			  {
-				"name": "Default",
+				"name": "Featured Stories",
 				"value": "/featured-stories.json"
 			  }
 			]
