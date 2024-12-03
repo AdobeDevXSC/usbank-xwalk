@@ -154,7 +154,7 @@ header .nav-wrapper {
 	transform: translateY(-50%);
 	left: 4px;
 	border-radius: 50%;
-	background-color:#0a41c5;;
+	background-color:#0a41c5;
   }
 
   header nav .nav-sections p:first-of-type::before {
