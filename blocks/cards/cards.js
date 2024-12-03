@@ -2,8 +2,8 @@ import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
-	const isIconCards = block.classList.contains('icon');
-	const isArticleCards = block.classList.contains('articles');
+	const isIconCards = block.classList.contains('is-icon');
+	const isArticleCards = block.classList.contains('is-json');
 
 	async function fetchJson(link) {
 		const response = await fetch(link?.href);
@@ -40,7 +40,34 @@ export default function decorate(block) {
 		anchor.append(li);
 		ul.append(anchor);
 	});
-  };
+  } else if (isArticleCards) {
+	link = block.querySelector('a');
+	const cardData = fetchJson(link);
+  
+  cardData.forEach((item) => {
+      const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
+      picture.lastElementChild.width = '320';
+      picture.lastElementChild.height = '180';
+      const createdCard = document.createElement('li');
+      createdCard.innerHTML = `
+        <div class="cards-card-image">
+          <div data-align="center">${picture.outerHTML}</div>
+        </div>
+        <div class="cards-card-body">
+          <h5>${item.title}</h5>
+          <p class="button-container">
+            <a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
+              Read more 
+              <span class="card-arrow">
+                <img class="icon" src="/icons/chevron.svg" />
+              </span>
+            </a>
+          </p>
+        </div>
+      `;
+      ul.append(createdCard);
+    });
+  } else {
 
   [...block.children].forEach((row) => {
 	const li = document.createElement('li');
@@ -56,35 +83,7 @@ export default function decorate(block) {
 	});
 	ul.append(li);
   });
-	
-//   if (isArticleCards) {
-// 	link = block.querySelector('a');
-// 	const cardData = fetchJson(link);
-  
-//   cardData.forEach((item) => {
-//       const picture = createOptimizedPicture(item.image, item.title, false, [{ width: 320 }]);
-//       picture.lastElementChild.width = '320';
-//       picture.lastElementChild.height = '180';
-//       const createdCard = document.createElement('li');
-//       createdCard.innerHTML = `
-//         <div class="cards-card-image">
-//           <div data-align="center">${picture.outerHTML}</div>
-//         </div>
-//         <div class="cards-card-body">
-//           <h5>${item.title}</h5>
-//           <p class="button-container">
-//             <a href="${item.url}" aria-label="${item['anchor-text']}" title="${item['anchor-text']}" class="button">
-//               Read more 
-//               <span class="card-arrow">
-//                 <img class="icon" src="/icons/chevron.svg" />
-//               </span>
-//             </a>
-//           </p>
-//         </div>
-//       `;
-//       ul.append(createdCard);
-//     });
-//   }
+  }
 
   ul.querySelectorAll('picture > img').forEach((img) => {
     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);

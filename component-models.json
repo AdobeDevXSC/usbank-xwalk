@@ -159,11 +159,11 @@
 			"options": [
 			  {
 				"name": "Icon",
-				"value": "icon"
+				"value": "is-icon"
 			  },
 			  {
-				"name": "Articles",
-				"value": "articles"
+				"name": "JSON",
+				"value": "is-json"
 			  }
 			]
 		},
