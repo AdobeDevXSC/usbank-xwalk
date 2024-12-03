@@ -77,36 +77,35 @@ main .hero-container > div {
 	width: fit-content;
 	max-width: 400px;
   }
+
   
   /* article page hero styles */
   .hero.article {
 	padding: 0 2rem;
+	margin: 48px auto 80px;
 	margin-bottom: 80px;
-  }
-  
-  .hero.article .hero-image-wrapper {
+	max-width: 1200px;
 	display: flex;
 	flex-direction: column-reverse;
-	max-width: 1200px;
-	margin: 48px auto 0;
   }
-  
-  .hero.article .hero-image-wrapper div:nth-child(2) h1 {
+    
+  .hero.article .hero-cta-wrapper h1 {
 	margin: 0;
 	line-height: 1.2;
 	letter-spacing: .01em;
 	font-size: 2.5rem;
-	font-weight: 700;
+	font-weight: 500;
 	margin: 0 0 1.25rem;
 	color: var(--heading-color);
   }
   
-  .hero.article .hero-image-wrapper div:nth-child(2) p {
+  .hero.article .hero-cta-wrapper p {
 	line-height: 1.6;
 	letter-spacing: .01em;
 	font-weight: 400;
 	font-size: 1rem;
 	margin: 0 0 0.5rem;
+	color: var(--disclosure-color);
   }
   
   .hero.article img {
