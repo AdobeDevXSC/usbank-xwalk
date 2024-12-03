@@ -159,11 +159,11 @@
 			"options": [
 			  {
 				"name": "Related Content",
-				"value": "/related-content.json"
+				"value": "/articles/related-content.json"
 			  },
 			  {
 				"name": "Featured Stories",
-				"value": "/featured-stories.json"
+				"value": "/articles/featured-stories.json"
 			  }
 			]
 		}
