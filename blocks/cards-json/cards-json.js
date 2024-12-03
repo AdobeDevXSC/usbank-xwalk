@@ -23,7 +23,6 @@ export default async function decorate(block) {
 			picture.lastElementChild.height = '180';
 
 			const createdCard = document.createElement('li');
-			// moveInstrumentation(item, createdCard);
 			
 			createdCard.innerHTML = `
 				<div class="cards-card-image">
@@ -45,12 +44,6 @@ export default async function decorate(block) {
 			console.log(createdCard)
 			ul.append(createdCard);
 		})
-
-//   ul.querySelectorAll('picture > img').forEach((img) => {
-//     const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
-//     moveInstrumentation(img, optimizedPic.querySelector('img'));
-//     img.closest('picture').replaceWith(optimizedPic);
-//   });
 
   block.textContent = '';
   block.append(ul);
