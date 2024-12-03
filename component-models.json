@@ -148,6 +148,28 @@
     ]
   },
   {
+    "id": "cards-json",
+	"fields": [
+		{
+			"component": "select",
+			"valueType": "string",
+			"name": "link",
+			"label": "Service",
+			"value": "",
+			"options": [
+			  {
+				"name": "Default",
+				"value": "/related-content.json"
+			  },
+			  {
+				"name": "Default",
+				"value": "/featured-stories.json"
+			  }
+			]
+		}
+	]
+  },
+  {
     "id": "cards",
     "fields": [
 		{
@@ -160,10 +182,6 @@
 			  {
 				"name": "Icon Cards",
 				"value": "is-icon"
-			  },
-			  {
-				"name": "JSON Cards",
-				"value": "is-json"
 			  }
 			]
 		},
