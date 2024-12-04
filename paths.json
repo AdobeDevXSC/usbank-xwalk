@@ -9,7 +9,6 @@
   ],
   "includes": [
     "/content/usbank-xwalk/",
-	"/content/usbank-xwalk/articles/",
     "/content/dam/usbank-xwalk/images/"
   ]
 }
