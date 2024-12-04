@@ -12,7 +12,6 @@ export default async function decorate(block) {
 	if (!response.ok) {
 		return 'an error occurred';
 	}
-	console.log(link, response)
 
 	const jsonData = await response.json();
 	const cardData = jsonData.data;
@@ -42,7 +41,6 @@ export default async function decorate(block) {
 			</div>
 		`;
 
-		console.log(createdCard)
 		ul.append(createdCard);
 	})
 
