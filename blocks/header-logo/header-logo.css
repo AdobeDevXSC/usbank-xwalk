@@ -1,3 +1,39 @@
 .placeholder {
     width: 100%;
 }
+
+.header-logo-wrapper {
+	width: 100%;
+	max-width: 1200px !important;
+	position: relative;
+	margin: 0 auto;
+}
+
+.header-logo-wrapper a,
+.header-logo-wrapper a img {
+	display: block;	
+}
+
+@media (width <= 1000px) {
+	.header-logo-wrapper {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: unset;
+		height: 56px;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .12);
+	}
+
+	.header-logo.block,
+	.header-logo-wrapper a picture, 
+	.header-logo-wrapper a picture img {
+		height: 56px;
+	}
+
+	.header-logo-wrapper a {
+		width: fit-content;
+		margin: 0 auto;
+	}
+}
