@@ -18,6 +18,9 @@
   
   .cards.is-json .cards-card-image img {
 	max-height: 200px;
+	display: block;
+	width: 100%;
+	aspect-ratio: 16/9;
   }
   
   .cards.is-json .cards-card-body {
