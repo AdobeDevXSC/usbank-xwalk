@@ -14,6 +14,10 @@
 	display: block;	
 }
 
+.header-logo-wrapper a:hover {
+	cursor: pointer;
+}
+
 @media (width <= 1000px) {
 	.header-logo-wrapper {
 		width: 100%;
@@ -24,6 +28,7 @@
 		max-width: unset;
 		height: 56px;
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .12);
+		z-index: 20;
 	}
 
 	.header-logo.block,

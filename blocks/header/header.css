@@ -289,8 +289,10 @@ header .nav-wrapper {
 	  display: block;
 	}
   
+	header nav .nav-brand .default-content-wrapper p:hover, 
 	header nav .nav-brand .default-content-wrapper p a:hover {
 	  text-decoration: none;
+	  cursor: pointer;
 	}
     
 	header nav .nav-hamburger {
