@@ -18,6 +18,12 @@
 	cursor: pointer;
 }
 
+@media (width < 1200px) {
+	.header-logo-wrapper {
+		width: fit-content;
+	}
+}
+
 @media (width <= 1000px) {
 	.header-logo-wrapper {
 		width: 100%;
