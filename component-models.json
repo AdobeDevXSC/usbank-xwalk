@@ -159,11 +159,11 @@
 			"options": [
 			  {
 				"name": "Related Content",
-				"value": "articles/related-content.json"
+				"value": "https://main--usbank-xwalk--adobedevxsc.aem.page/articles/related-content.json"
 			  },
 			  {
 				"name": "Featured Stories",
-				"value": "articles/featured-stories.json"
+				"value": "https://main--usbank-xwalk--adobedevxsc.aem.page/articles/featured-stories.json"
 			  }
 			]
 		}
