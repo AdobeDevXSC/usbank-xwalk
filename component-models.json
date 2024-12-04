@@ -291,5 +291,23 @@
 		]
 	  }
     ]
+  },
+  {
+    "id": "header-logo",
+    "fields": [
+		{
+			"component": "reference",
+			"name": "logo",
+			"label": "Logo",
+			"multi": false
+		},
+		{
+			"component": "aem-content",
+			"name": "logo-link",
+			"value": "",
+			"label": "Link",
+			"valueType": "string"
+		}
+	]
   }
 ]
